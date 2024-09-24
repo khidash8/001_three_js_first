@@ -6,5 +6,40 @@
 
 body,
 html {
-  overflow-x: "hidden";
+  overflow: hidden; /* This will remove scrollbars from both x and y */
+  height: 100%; /* Ensure body takes full height */
+  font-family: "Poppins", sans-serif;
+}
+
+.webgl {
+  position: absolute;
+  z-index: 1;
+}
+
+nav {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  padding: 50px; /* Remove quotes here */
+}
+
+.link {
+  text-decoration: none;
+  color: #fff; /* Remove quotes here */
+  font-size: large;
+}
+
+.title {
+  color: #fff;
+  position: absolute;
+  z-index: 10;
+  font-size: 25px;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -75%);
+}
+
+.title span {
+  color: #00ff00;
 }
